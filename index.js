@@ -1,7 +1,19 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
+const inquirer = require("inquirer");
+
+const fs = require("fs");
+
+const path = require("path");
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+
+  {
+    type: "input",
+    name: "name",
+    message: "What is your name?"
+  }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
