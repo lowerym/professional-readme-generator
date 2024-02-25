@@ -5,6 +5,8 @@ const fs = require("fs");
 
 const path = require("path");
 
+const generateMarkdown = require("./assets/utils/generateMarkdown");
+
 // Array of questions for user input
 const questions = [
 
@@ -49,6 +51,13 @@ const questions = [
     name: "test",
     message: "What command should be used to run tests?",
     default: "npm test"
+  },
+
+  {
+    type: "input",
+    name: "dependencies",
+    message: "What dependencies should be installed?",
+    default: "npm i"
   },
 
   {
